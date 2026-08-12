@@ -50,7 +50,7 @@
 
       <!-- CTA -->
       <button
-        class="rounded-xl bg-red-600 px-5 py-3 font-semibold text-white shadow-lg transition hover:bg-red-700"
+        class="cursor-pointer rounded-xl bg-red-600 px-5 py-3 font-semibold text-white shadow-lg transition hover:bg-red-700"
       >
         Solicitar Demonstração
       </button>
