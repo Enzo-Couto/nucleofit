@@ -1,6 +1,9 @@
+<script setup lang="ts">
+import { RouterLink } from 'vue-router'
+</script>
 <template>
   <header
-    class="fixed top-0 left-0 right-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-sm"
+    class="fixed top-0 left-0 right-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-sm"panel-105-4
   >
     <div
       class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6"
@@ -49,11 +52,20 @@
       </nav>
 
       <!-- CTA -->
-      <button
-        class="cursor-pointer rounded-xl bg-red-600 px-5 py-3 font-semibold text-white shadow-lg transition hover:bg-red-700"
-      >
-        Solicitar Demonstração
-      </button>
+      <div class="flex items-center gap-3">
+        <RouterLink
+          to="/login"
+          class="cursor-pointer rounded-xl px-5 py-3 font-semibold text-slate-700 transition hover:bg-slate-100"
+        >
+          Entrar
+        </RouterLink>
+
+        <button
+          class="cursor-pointer rounded-xl bg-red-600 px-5 py-3 font-semibold text-white shadow-lg transition hover:bg-red-700 hover:shadow-red-500/30"
+        >
+          Solicitar Demonstração
+        </button>
+      </div>
     </div>
   </header>
 </template>
